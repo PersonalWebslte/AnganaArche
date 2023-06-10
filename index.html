@@ -1,531 +1,312 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arch Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="">
-    <link rel="icon" href="web-icon.png">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Searchbar</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="style.css">
+         <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-<body>
 
-   
+    <body>
 
-<!-- Navigation Section and Hero-content-->
-
-    <div class="container">
-        <div class="container-cover"></div>
-        <div class="navbar" id="nav">
-            <img class="main-logo" src="main-logo.png" onclick="location.href='#back'">
-
-            <i class="fa-solid fa-bars-progress"></i>
-
-            <ul id="sidemenu">
-                <img class="side-logo" src="main-logo.png" onclick="location.href='#back'">
-                <li><a href="#about-bookmark">about me</a></li>
-                <li><a href="#works">works</a></li>
-                <li><a href="#services-bookmark">skills</a></li>
-                <li><a href="#CTA-bookmark" class="concon"> Message me</a></li>
-         
-                <div class="exit-btn">
-
-                    <i class="fa-regular fa-x"></i>
-                </div>
+        <header>
               
-             
-            </ul>
-
-     
-        </div>
-
-<!---------Script for navbar---------->
-
-        <script>
-
-            var sidemenu = document.getElementById('sidemenu');
-
-            var click = document.querySelector('.fa-solid');
-
-            var exit = document.querySelector('.fa-regular');
-
-            var exitBox = document.querySelector('.exit-btn');
-
-
-        
-            click.onclick = function openside(){
-
-               sidemenu.style.left = "0";
-                exitBox.style.right = "-30px";
-               document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-
-            }
-
-            exit.onclick = function closeside(){
-                sidemenu.style.left = "-170px";
-                exitBox.style.right = "0";
-            }
-
-
-
-        </script>
-
-<!------------------->
-        <div class="hero-parent" id="back">
-
-            
-            <span clas="name"> Hi! I'm Arche Angana</span>
-
-            <div class="hero-heading">
-                 <div class="typing">FRONT-END WEB DEV</div>
-                 <span  class="gradient">/DESIGNER</span>
-                
-            </div>
-                <p> Aspiring Front-end Web Developer and Graphic Designer. <br> Check out my social media profiles.
-                </p>
-                
-        <div class="scroll-main" id="scroll-main">
-
-            <a href="https://www.facebook.com/AnganaArche" target="_blank"><img src="facebook.png" alt=""></a>
-
-            <a href="https://www.instagram.com/arch02_88/" target="_blank"><img class="insta" src="Instagram.png" alt=""></a>
-
-            <a href="https://twitter.com/arch__01" target="_blank"><img src="twitter.png" alt=""></a>
-    
-    </div> 
-        </div>
-        
-        <div class="filter-1"></div>
-        <div class="filter-2"></div>
-        <div class="filter-3"></div>
-        <div class="filter-4"></div>
-    </div>
-
-<!-- Navigation Section and Hero-content END-->
-
-<!-- About-Section-->
-    <div class="primary-about-section" id="about-bookmark">
-
-            <div class="about-header">
-                <p> About</p>
-            </div>
-
-            <div class="about-content">
-            <img class="reveal-1" src="coding.png" data-tilt data-tilt-glare>
-            <script src="tilt.js"></script>
-
-            <div class="about-navigation"> 
-                <h1 class="header-experience"> Get to know me</h1>
-                <p> I am currently 3rd year BSGD student at CEBU TECHNOLOGICAL UNIVERSITY Main - Campus and a aspiring web designer and graphic designer. With my knowledge, I strive to give you with the best service possible. 
-                </p>
-            </div>
-            </div>  
-            
-            <div class="about-content-job">
-                <div class="about-job-child">
-                    <h1 class="head"> More about me</h1>
-                    <p> I have a desire for knowledge and a commitment to put that knowledge into action.  My passion for understanding the complexities of web design/development drives my belief that mindfulness in the workplace is key to success. I, too, consider myself a "forever student," ready to learn new design approaches and techniques while keeping up with design trends. 
-                    </p>
-                </div>
-
-                <img class="reveal-2" src="css.png" width="400px" height="300px" data-tilt data-tilt-glare>
-                <script src="tilt.js"></script>
-
-                <div class="CV-CTA-btn">
-                    <a href="myCV.pdf" target="_blank" class="about-CTA-btn"> View CV</a>
-                </div>
-            </div>
-
-<!---->
-     
-    </div>
-<!-- About-Section boundary-->
-
-
-<!-- The Works -->
-<div class="works-container" id="works">
-
-    
-    <div class="work-header">
-        <h1> Works </h1>
-    </div>
-
-    <div class="work-section1">
-
-        <div class="work-section-content">
-
-                <p> MOBILE APP DESIGN</p>
-                <h2>UX/UI Design Ramen Rhythm App</h2>
-                <p> This app delivers meals and features Japanese cuisine. The design gains appeal by using black with a little yellow contrast which impose hunger and elegance at the same time.
-                </p>
-        </div>
-     
-
-        <div class="work-item1">
-            <img src="ramen-checkout.png" alt="">
-            <img src="Ramen1.png" alt="">
-            <img src="Ramen3.png" alt="">
-        </div>
-
-
-        <div class="dropShadow1"></div>
-        <div class="dropShadow2"></div>
-        <div class="bg-line"></div>
-
-     
-    </div>
-
-<!-- Section2-->
-
-    <div class="work-section2">
-        <img src="Fit Arc.png" alt="">
-        <div class="work-item2">
-            <img src="PhoneWeb.png" alt="">
-        </div>
-        
-        <div class="s2text-content">
-          
-            <p> RESPONSIVE WEBSITE DESIGN</p>
-            <h2> Can Fit To smaller screen</h2>
-            <p>Creating an architecture company website with a red motif that represents speed, passion and love will undoubtedly attract customers.</p>
-        </div>
-    </div>
-
-
-<!-- Section3-->
-    <div class="work-section3">
-        <h1 class="section3-header"> aShop.com</h1>
-        <div class="s3text-content">
-            <h1>Make<br> Ecommerce<br> Website</h1>
-            <p>with simple and direct<br> Layout & Design</p>
-        </div>
-      
-        <div class="work-item3-1">
-            <img src="webanimation.png" alt="">
-        </div>
-    </div>
-   
-    
-</div>
-
-<!-- Portfolio section-->
-    <div class="primary-portfolio-section">
-      
-        <div class="slideshow-container">
-
-            <!-- images -->
-            <div class="mySlides fade" id="main1">
-             
-              <div class="content omega1">
-                <img src="ramen222-01.png" alt="Ramen-logo">
-              </div>
-             
-              <div class="text"></div>
-            </div>
-          
-            <div class="mySlides fade">
-             
-              <div class="content omega2">
-                <img src="turtlelogo-01.png" alt="turtle">      
-              </div>
-
-        
-            </div>
-          
-            <div class="mySlides fade">
-            
-              <div class="content omega3"> <img src="musiclogo1-01.png" alt="music"></div>
-              <div class="text"></div>
-            </div>
-
-            <div class="mySlides fade">
-              
-                <div class="content omega4">
-                    <img src="finarclogo-01.png" alt="finarc"></div>
+                <img class="CTULOGO" src="CTU-LOGO.png">
+                <img class="header-bg" src="header.jpg" alt="">
                
-              </div>
+        </header>
 
-              <div class="mySlides fade">
-            
-                <div class="content omega5">
-                     <img src="ashoplogo-01.png" alt="ashop-logo"></div>
-                <div class="text"></div>
-              </div>
+        <div class="navigation">
+            <span class="logo">&#x2770;/ &#x2771;BSGD 3A DAY Website Directory</span>
 
-              <div class="mySlides fade">
-            
-                <div class="content omega6">
-                    <img src="hangerlogo-01.png" alt="hanger-logo">
+            <ul class="list" id="menu-list">
+              
+               <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Class list</button>
+                
+
+                <div id="myDropdown" class="dropdown-content">
+                 
+                  <a href="#">Acaylar, Joybelle</a>
+                  <a href="#">Alquilos, Graeme<br> Dayle</a>
+                  <a href="#">Ambrad, Sheena</a>
+                  <a href="#">Angana, Arche</a>
+                  <a href="#">Arbon, Trecemier</a>
+                  <a href="#">Baguio, Christine<br>Jane</a>
+                  <a href="#">Baguio, Diether </a>
+                  <a href="#">Baguio, Monique </a>
+                  <a href="#">Berdin, Mark Edison</a>
+                  <a href="#">Brazil, Ma. Christina</a>
+                  <a href="#">Celis, Mave Jade</a>
+                  <a href="#">Escalicas, Kristell </a>
+                  <a href="#">Flores, Gian Onel </a>
+                  <a href="#">Gavas, John Oriel </a>
+                  <a href="#">Genon, Shaveh <br>Leozel </a>
+                  <a href="#">Gutang, Jeraldine</a>
+                  <a href="#">Herbito, Karyll</a>
+                  <a href="#">Lagura, Mary <br>Princess</a>
+                  <a href="#">Maca-ayong, Jobarh</a>
+                  <a href="#">Minoza, Wella Marie</a>
+                  <a href="#">Nator, Ailes</a>
+                  <a href="#">Pilapil, Romy Jay</a>
+                  <a href="#">Pogoy, Kheira Melore</a>
+                  <a href="#">Quibilan, Kelly</a>
+                  <a href="#">Rada, Jishia Cohlyn</a>
+                  <a href="#">Ycong, Justine Claire</a>
+                  
                 </div>
-                <div class="text"></div>
               </div>
-          
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-               <!-- The dots -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-
+                
+            </ul>  
+            <img id="menu" src="menu.png" alt="" onclick="dropdown()">
             
-          </div>
-
-          </div>
-          <br>
-          
-
-</div>
-    <div class="border-bottom"></div>
-</div>
+            
+        </div>
 
 
-<!-- Script for carousel-->
-
+<!-- Script for classlist-->
 <script>
-    let slideIndex = 1;
-showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
-
+  
 </script>
 
-<!-- Portfolio-boundary-->
+  <!-- Script for Navigation mobile -->
+  <script>
 
+      var menu = document.getElementById('menu');
+      var menulist = document.getElementById('menu-list');
+      
 
-<!-- Service Section-->
-    <div class="primary-services" id="services-bookmark">
-    <div class="bg-cover"></div>
-    
-                <div class="merketing-service">
-                    <h1> Skills </h1> 
+     function dropdown(){
 
-                    <div class="service-1">
+        if(menulist.style.right == "-250px"){
+          menulist.style.right = "0";
+       
+         
 
-                        <div class="service-content">
-                            <h3>Digital Assets</h3>
-                            <p> I can help you market your business utilizing digital ads/marketing design and develop your brand by creating logos that will set your company out from the competition.</p>
+        }else{
+          menulist.style.right = "-250px";
+         
+        }
+      }
 
-
-                            <div class="mob-content-1 mob-child"><h4> Logo design</h4></div>
-
-                            <div class="mob-content-2 mob-child"> <h4> Digital Ads</h4></div>
-                            
-                           
-                    
-                        </div>
-
-                        <div class="service-content-1">
-
-                         
-                            <h3>Digital Ads</h3>
-                            <p> With my design I can make you an digiral advertisment that attracts your target demographic for your business</p>
-                            
-                            <a href="Marketing-Payout.html"> Avail now</a>
-                            <div class="servce-icon"></div>
-                        </div>
-
-                        <div class="service-content-2">
-                          
-                            <h3>Logo Design</h3>
-                            <p> I can help you build your brand by designing the logo or trademark that will enable your company to expand and attract customers.</p>
-                            <a href="#"> Avail now</a>
-                        </div>
-
-                    </div>
-                    </div>
-
-                    
-                    <div class="product-service">
-
-                        <div class="product-content">
-                            <h3>Web design</h3>
-                            <p>  I can create the layout and design of your website, making it visual appealing. As well as making it responsive to all screen size.</p>
-
-                            <div class="mob-product-1 mob-child"><h4>
-                                UX(User Experience)
-                            </h4></div>
-
-                            <div class="mob-product-2 mob-child"><h4>
-                                UI(User Interface)
-                            </h4></div>
-                            
-                        </div>
-
-                         <div class="product-content-1">
-                             <h3>UX(User Experience)</h3>
-                             <p> I can improve user experience, by understanding what they need, what they value, their accessibility, and the limitations of users when visiting your app or website</p>
-                           
-                         </div>
-
-                        <div class="product-content-2">
-                            <h3>UI(User Interface)</h3>
-                            <p> By fully understanding the point of contact between your target users and the computer or the website/app itself, I can design an interactive interface that is efficient, friendly, and responsive. </p>
-                          
-                                    
-                        </div>
-
-                    </div>
-    </div>
-<!-- Service-Section-boundary -->  
+        
+      
+     
+  </script>
 
 
 
-<!-- Call to Action-section-->
 
-    <div class="CTA-section" id="CTA-bookmark">
-        <div class="context">
-            <h1>
-                Think I'd fit your business?<br>
-                Let's Talk
-            </h1>
-           
-           
+<!-- Search engine wrapper -->      
+<div class="seachBar-Container">
+
+    <div class="Search-bar">
+      <p> Welcome to the </p>
+        <h1>BSGD 3-A Website Directory</h1>
+        <p>Enter a student's name below to select and view their personal website</p>
+     </div>
+
+     <div class="search-box"> 
+
+         <div class="row">
+
+             <input type="text" id="input-box" placeholder="Search..." autocomplete="off">
+
+
+             <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            
+         </div>
+         <div class="result-box"></div>
+
+     </div>
         </div>
-       <form>
-            <h3>Let's Talk</h3>
-            <input type="text" id="name" placeholder="Name" required >
-
-            <input type="email" id="email" placeholder="Email" required >
-
-            <input type="text" id="phone" placeholder="Phone no." required >
-
-            <textarea id="message" rows="10" placeholder="How can we help you?"></textarea>
-
-            <button type="submit" onclick="alert('Sent Successfully')"> Send Message</button> 
-       </form>
-
-    </div>
-
-<!-- CTA-boundary-->
-
-
 
 <!-- Footer -->
-    <div class="footer-wrapper">
+    <footer>
 
-    <div class="footer-child-container">
-        <div class="footer-child-1"><img src="main-logo.png" alt="footer Logo"></div>
+ 
 
-        <div class="footer-child-2">
-            <p>Cebu Technological University</p>
-            <p>MJ Cuenco Avenue</p>
-            <p>Cebu City</p>
+        <div class="about-us">
+          <h3>About Us</h3>
+          <p>This website was designed and developed by BSGD 3A students as a final requirement in fulfillment of the subject Web Design (GD3214).</p>
         </div>
 
-        <div class="footer-child-3">
-            <p>Contact</p>
-            <p>+63 09984596370</p>
-            <p>archeangana@gmail.com</p>
+        <div class="quick-links">
+          <h3>Quick links</h3>
+          <a href="https://www.ctu.edu.ph" target="_blank">Visit CTU Web page</a>
+          <a href="https://www.facebook.com/ctu.premier" target="_blank" >CTU FB page</a>
         </div>
 
-        <div class="footer-child-4">
-           
-            <span><img src="facebook.png"></span>
-            <span><img src="Instagram.png"></span>
-            <span><img src="twitter.png"></span>
-          
+        <div class="credits">
+          <h3>Credits</h3>
+          <a href="https://www.facebook.com/AnganaArche" target="_blank" >Arche Angana</a>
+          <a href="https://www.facebook.com/bellato448" target="_blank" >Jobarh Maca-ayong</a>
+          <a href="https://www.facebook.com/gdayle.alquilos" target="_blank" >Graeme Dayle Alquilos</a>
         </div>
 
-        <div class="footer-child-5">
-            &copy; 2023 Arche. All Rights Reserved.
+        <div class="footer_CTU">
+          <h1>CEBU TECHNOLOGICAL UNIVERSITY</h1>
         </div>
+ 
+    </footer>
+
+    <div class="last-section">
+      <p>&copy; 2023 BSGD 3A. All rights reserved</p>
+      <p>Batch 2023</p>
     </div>
 
 
-    <button id="upButton" class="up-button" onclick="scrollToTop()"><img src="top.png" alt=""></button>
+<!-- Main JS -->
+   <script>
 
+        let availableKeywords = [
+  'Acaylar, Joybelle P.',
+  'Alquilos, Graeme Dayle L.',
+  'Ambrad, Sheena Ann M.',
+  'Angana, Arche M.',
+  'Arbon, Trecemier G. Jr.',
+  'Baguio, Christine Jane',
+  'Baguio, Diether A.',
+  'Baguio, Monique D.',
+  'Berdin, Mark Edison T.',
+  'Brazil, Ma. Christina C.',
+  'Celis, Mave Jade R.',
+  'Escalicas, Kristell T',
+  'Flores, Gian Onel D.',
+  'Gavas, John Oriel V.',
+  'Genon, Shaveh Leozel V.',
+  'Gutang, Jeraldine B.',
+  'Herbito, Karyll R.',
+  'Lagura, Mary Princess',
+  'Maca-ayong, Jobarh M.',
+  'Minoza, Wella Marie C.',
+  'Nadela, Neiah Carmela M.',
+  'Nator, Ailes B',
+  'Pilapil, Romy Jay C.',
+  'Pogoy, Kheira Melore T.',
+  'Quibilan, Kelly L.',
+  'Rada, Jishia Cohlyn',
+  'Ycong, Justine Claire V.',
+];
 
-    </div>
+let keywordUrls = {
+  'Acaylar, Joybelle P.': 'https://joybsacays.github.io/joybellephotography/index.html?fbclid=IwAR1l--TCBQ9R8280em-9B1vSGCzCq3n1efGl76trnWrTY5q68MO8fDgfjlk',
+  'Alquilos, Graeme Dayle L.': 'https://gdayle.github.io/grimmdle/?fbclid=IwAR1k38rKbNkZ4aohhaJttDhNiQ4_tzatvTVNUOg1jPkGqEqreN8oMp-chpA',
+  'Ambrad, Sheena Ann M.': 'https://sambrad123.github.io/BSGD3A-FINAL/?fbclid=IwAR36AMOqxt_bJYYHo6Izdh9U22UeB0nS8vUtqRPfH9iqS9LJuuE5fmrJPPc',
+  'Angana, Arche M.':'https://example.com/angana',
+  'Arbon, Trecemier G. Jr.':'https://trecemier.github.io/trek/index.html?fbclid=IwAR0_UycJedQtGSyYZUutJ7jI9Feypk2atH0Mus-AOU1f6CTlReT71RM1g9Q',
+  'Baguio, Christine Jane':'https://christineyjaney.github.io/Memorabilia/?fbclid=IwAR1KHqMnxR1i0Dc2PDAIPEuISAuNh1n9AzAVngD03AoqJdh_Ue0NBATMrCM',
+  'Baguio, Diether A.':'https://dter00.github.io/dter/?fbclid=IwAR3SWv_X3HsSwlyzXji4y7NvBu1EDb-TVINDQwwXgiBAd668e9KqNKDaRUk',
+  'Baguio, Monique D.':'https://qquee.github.io/Que/?fbclid=IwAR3QyKtMlzk0wTw_A91G-F69cczvDFmCsNLznHjKwB2Pi64qK5bUj3Rj0QI',
+  'Berdin, Mark Edison T.':'https://mberdin13.github.io/berdinmarkedison/?fbclid=IwAR2keUybtiGva5pb7J29xVTwCMBe0u9QdrC_7VDgGjZtZBINbOgJPPJ3aWg',
+  'Brazil, Ma. Christina C.':'https://brazil07.github.io/BSGD3A-FINAL/?fbclid=IwAR0eJMu2GYhBRi11FQ396lGvP3mC07taDZ2NncEiMusgAQKVGpmnjVD3RqU#',
+  'Celis, Mave Jade R.':'https://mavecelis.github.io/BSGD3AFinalsPortfolio/?fbclid=IwAR14GHyVXJTSIEy-M2g3iNIySD2eY_AILBq_QdtqxFpj_3DSxZfw0CqaDxI',
+  'Escalicas, Kristell T':'https://ystell07.github.io/Kristell/?fbclid=IwAR2s2wlJGRahVA5m10Yq9yUQQttXa2PvTOY9--vbivZx0Ho4JmGdX489MdU',
+  'Flores, Gian Onel D.':'https://gitgian.github.io/Web/?fbclid=IwAR3Z0bc1kwCEqbeGB7z10lBRI5pj605c-41emWHA67-pL8ntb75cHWNjI6M',
+  'Gavas, John Oriel V.':'https://cream0z.github.io/Fudgebar/?fbclid=IwAR3I-7ksCXI6SZ7BE2lHR7-g8FFlzxy7PlXQc7Kt49-o5psB-T0VYFzJsxw',
+  'Genon, Shaveh Leozel V.':'https://yyfanq.github.io/S.G/?fbclid=IwAR0vAPI3XHhFG1nf4xLW6tUvWYEOX-fAh3T7m0Wqe7PPQcirVbNXDwE2yEw',
+  'Gutang, Jeraldine B.':'https://not-jerrrr.github.io/jeraldine/',
+  'Herbito, Karyll R.':'https://karyllherbito.github.io/KlizeStudioPH/?fbclid=IwAR0rGuHknBEX-NAWrm29Q11q8oLXgOk2FbX-UrjYn03JV1GWW_NrA3QXXyM',
+  'Lagura, Mary Princess':'https://maryyprincesss.github.io/maryprincesslagura/?fbclid=IwAR2Ob72A2bQ2yy6yprpExcJsuuBwlPjeKkM2Y0dIQSqVwz_UjaD-2WcimJE',
+  'Maca-ayong, Jobarh M.':'https://portfolio-webdesign.github.io/JABZ/',
+  'Minoza, Wella Marie C.':'https://0h-well.github.io/well/?fbclid=IwAR1fG_bvGhQ2lDf45vD6dTMGxbqWKDV6mtaJo904JK55ofHGFxTXNNRzT_Y',
+  'Nadela, Neiah Carmela M.':'https://neiyaaang.github.io/Moon-Fashion-Line/?fbclid=IwAR3kE8dm0tKOwejXtCI29jPPVrYeIM4NEF-fVERtvlUa42oFkYOrZNV8kEQ',
+  'Nator, Ailes B':'https://ailovee00.github.io/Ai-Nator/?fbclid=IwAR21Q-_fdLFJz-bVaElpJ6s6nt4ppzQFkvu3iDPYXS2R0wVacnQI4TfwRRw',
+  'Pilapil, Romy Jay C.':'https://arlequint.github.io/PILAPIL-BSGD-3-A/?fbclid=IwAR2keUybtiGva5pb7J29xVTwCMBe0u9QdrC_7VDgGjZtZBINbOgJPPJ3aWg',
+  'Pogoy, Kheira Melore T.':'https://keiranyan.github.io/keiranyan/?fbclid=IwAR2Vipkxt2mzj0UR-BgmPr-YnKoETzem2rFTE1Rb9pVKUTzCDS6keIWQUoM',
+  'Quibilan, Kelly L.':'https://klylara.github.io/kly5/?fbclid=IwAR0TRS2UWcUtk8MOaMiJ1UzKeVPOJKd6OOBtyeDww7pf20r96AgpDs7kjKQ',
+  'Rada, Jishia Cohlyn':'https://jcohlyn.github.io/cohstudio/?fbclid=IwAR1U2KKyJxXhmkvw2fBP3b5Ju05tm4jtaisj1NOoMGK6s4hh64nzu3ZfYT0',
+  'Ycong, Justine Claire V.':'https://yjustine.github.io/personalwebsite/?fbclid=IwAR0TRS2UWcUtk8MOaMiJ1UzKeVPOJKd6OOBtyeDww7pf20r96AgpDs7kjKQ#1',
+};
 
+const resultBox = document.querySelector(".result-box");
+const inputBox = document.getElementById("input-box");
 
+inputBox.onkeyup = function() {
+  let result = [];
+  let input = inputBox.value;
 
-    <!-- Main Script -->
-<script>
-    window.addEventListener('scroll', function() {
-  var upButton = document.getElementById('upButton');
-  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (scrollPosition > 300) {
-    upButton.style.display = 'block';
-  } else {
-    upButton.style.display = 'none';
+  if (input.length) {
+    result = availableKeywords.filter((keyword) => {
+      return keyword.toLowerCase().includes(input.toLowerCase());
+    });
+    console.log(result);
   }
-});
+  display(result);
 
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
+  if (!result.length) {
+    resultBox.innerHTML = '';
+  }
+};
+
+function display(result) {
+  const content = result.map((list) => {
+    return "<li onclick=selectInput(this)>" + list + "</li>";
   });
+
+  resultBox.innerHTML = "<ul>" + content.join('') + "</ul>";
 }
-</script>  
 
-<script>
-          
-    animateElement = (element,origin,delay) => {
-       
-        const sr = ScrollReveal({
-            delay: delay,
-            distance: '100px',
-            duration: 1000,
-            easing: 'ease',
-            origin: origin
-        });
-      
-        sr.reveal(element);{}
-    }
-    
-    animateElement(".reveal-1","left",200);
-    animateElement(".reveal-2","right",300);
-    animateElement(".about-job-child","left",500);
-    animateElement(".about-navigation","right",500);
-    animateElement(".about-header","bottom",200);
-    animateElement(".work-item1","bottom",200);
-    animateElement(".work-item3","bottom",300);
-    animateElement(".work-section-content","left",500);
-    animateElement(".dropShadow1","right",400);
-    animateElement(".dropShadow2","left",400);
-    
-    </script>   
+function selectInput(list) {
+  const keyword = list.innerHTML;
+  inputBox.value = keyword;
+  resultBox.innerHTML = '';
+
+  if (keywordUrls.hasOwnProperty(keyword)) {
+    const url = keywordUrls[keyword];
+    window.open(url, "_blank");
+  }
+}
 
 
-</body>
+
+//scroll reveal
+// scroller reveal 
+animateElement = (element,origin,delay) => {
+    // Initialize ScrollReveal with options
+    const sr = ScrollReveal({
+        delay: delay,
+        distance: '100px',
+        duration: 1000,
+        easing: 'ease',
+        origin: origin
+    });
+  
+    // Reveal the element
+    sr.reveal(element);
+}
+
+// animate element 
+animateElement(".header","bottom",500);
+animateElement(".search-box","bottom",500);
+
+   </script>
+
+
+    </body>
 </html>
